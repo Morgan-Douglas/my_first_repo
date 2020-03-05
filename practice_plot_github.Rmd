@@ -1,0 +1,22 @@
+---
+title: "Practice Plotting and Github"
+author: "Morgan Douglas"
+date: "3/5/2020"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+library(tidyverse)
+```
+
+
+
+```{r}
+iris
+ggplot(iris, aes(x = Species, y = Petal.Length)) +
+  geom_boxplot(color = "blue", fill = "red") -> PracticePlot 
+
+ggsave("practice_plot.png", PracticePlot)
+```
+
