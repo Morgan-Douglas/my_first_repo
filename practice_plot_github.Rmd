@@ -14,7 +14,7 @@ library(tidyverse)
 
 ```{r}
 iris
-ggplot(iris, aes(x = Species, y = Petal.Length)) +
+ggplot(iris, aes(x = Species, y = Sepal.Length)) +
   geom_boxplot(color = "blue", fill = "red") -> PracticePlot 
 
 ggsave("practice_plot.png", PracticePlot)
